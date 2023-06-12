@@ -34,16 +34,6 @@ const sortedBands = [...bands].sort((s1, s2) => {
 </script>
 
 <style>
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background: url('https://source.unsplash.com/nDqA4d5NL0k/2000x2000');
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-}
-
 #bands {
   list-style: inside square;
   font-size: 20px;
