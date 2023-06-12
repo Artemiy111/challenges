@@ -45,7 +45,7 @@ const setTime = () => {
   arrowMinute.value.style.rotate = `${degreesForMinutes}deg`
   arrowSecond.value.style.rotate = `${degreesForSeconds}deg`
   arrowMillisecond.value.style.rotate = `${degreesForMilliseconds}deg`
-  timeout.value = setTimeout(() => setTime(), 100)
+  timeout.value = setTimeout(() => setTime(), 100) as unknown as number
 }
 </script>
 

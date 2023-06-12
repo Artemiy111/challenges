@@ -29,13 +29,13 @@ const AUDIOUS = [
 ]
 const AUDIOUS_PATHS = AUDIOUS.map(a => `./src/modules/day01/assets/${a}.wav`)
 
-const audiosRefs = ref<HTMLAudioElement[] | null>(null)
+const audiosRefs = ref<HTMLAudioElement[]>([])
 
 const map = computed(() => {
   const m = new Map<string, HTMLAudioElement | null>()
   if (audiosRefs.value == null) return m
   for (const index in KEYS) {
-    m.set(KEYS[index], audiosRefs.value[index])
+    m.set(KEYS[index], audiosRefs.value[index] as HTMLAudioElement)
   }
   return m
 })
