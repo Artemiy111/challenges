@@ -24,6 +24,7 @@ import { route as routeDay20 } from '@/modules/day20'
 import { route as routeDay22 } from '@/modules/day22'
 import { route as routeDay24 } from '@/modules/day24'
 import { route as routeDay25 } from '@/modules/day25'
+import { route as routeDay26 } from '@/modules/day26'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -50,6 +51,7 @@ const router = createRouter({
     routeDay22,
     routeDay24,
     routeDay25,
+    routeDay26,
   ],
 })
 
