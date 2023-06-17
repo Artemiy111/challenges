@@ -47,7 +47,6 @@ const timeEnd = computed(() => {
 })
 
 const handleCustomMinutes = (event: Event) => {
-  console.log(event.target.value)
   const min = parseInt((event.target as HTMLInputElement).value)
   customMinutes.value = min
   setSecondsLeft(customMinutes.value * 60)

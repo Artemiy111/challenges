@@ -25,6 +25,7 @@ import { route as routeDay22 } from '@/modules/day22'
 import { route as routeDay24 } from '@/modules/day24'
 import { route as routeDay25 } from '@/modules/day25'
 import { route as routeDay26 } from '@/modules/day26'
+import { route as routeDay27 } from '@/modules/day27'
 import { route as routeDay29 } from '@/modules/day29'
 import { route as routeDay30 } from '@/modules/day30'
 const router = createRouter({
@@ -54,6 +55,7 @@ const router = createRouter({
     routeDay24,
     routeDay25,
     routeDay26,
+    routeDay27,
     routeDay29,
     routeDay30,
   ],
