@@ -1,19 +1,19 @@
 <template>
   <div class="screen w-full h-[100dvh] flex items-center justify-center gap-5 relative">
     <img class="object-cover w-full h-full absolute -z-10" src="./assets/piano.webp" alt="" />
-    <div v-for="[key, audio] of map" class="flex flex-col gap-2">
+    <div v-for="[key] of map" :key="key" class="flex flex-col gap-2">
       <button @click="handleClick(key)" class="btn">
         {{ key }}
       </button>
     </div>
-    <audio ref="audiosRefs" v-for="(audioSrc, i) in AUDIOUS_PATHS">
+    <audio ref="audiosRefs" v-for="(audioSrc, index) in AUDIOUS_PATHS" :key="index">
       <source :src="audioSrc" type="audio/wav" />
     </audio>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, type Ref, onMounted, computed } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 
 const KEYS = 'ASDFGHJKL'.split('')
 const AUDIOUS = [
