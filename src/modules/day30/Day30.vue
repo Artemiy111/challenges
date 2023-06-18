@@ -47,6 +47,7 @@ const startGame = () => {
   setTimeout(() => {
     clearInterval(interval)
     isGameActive.value = false
+    score.value = 0
   }, 10 * 1000)
 }
 
